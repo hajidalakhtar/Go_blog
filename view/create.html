@@ -1,0 +1,21 @@
+{{define "title"}}
+Niomic Blog | {{index . "name"}}
+{{end}}
+
+{{define "body"}}
+
+<div class="container">
+    <form action="/api" method="post">
+        <label for="">
+            <h5>Title</h5>
+        </label>
+        <input type="text" name="title" class="form-control"> <br>
+        <label for="">
+            <h5> Isi</h5>
+        </label>
+        <textarea name="isi" id="" cols="30" rows="10" class="form-control"></textarea>
+        <button type="submit" class="mt-3 btn btn-primary"><b>Post</b></button>
+    </form>
+</div>
+
+{{end}}

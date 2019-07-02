@@ -1,0 +1,17 @@
+{{define "title"}}
+Niomic Blog | {{index . "name"}}
+{{end}}
+
+{{define "body"}}
+{{range .data}}
+<div class="container mt-5">
+  <div class="card">
+    <div class="card-body">
+      <h1 class="text-center">{{.Title}}</h1>
+
+      <p class="mt-5 text-center">{{.Isi}}</p>
+    </div>
+  </div>
+</div>
+{{end}}
+{{end}}
